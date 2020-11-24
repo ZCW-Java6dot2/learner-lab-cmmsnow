@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class TechConnect {
     private ArrayList<Student> studentList = new ArrayList<Student>();
 
-    { // static initializer
+    { // static initializer(not static anymore..?)
         String[] studentNames = { "Karen", "Liel", "Quinn", "Destiny", "Blesson", "Danielle B.", "Andre", "Jeff",
                 "Carlo", "Julia D.", "Natalie", "Julia E.", "Shylee", "Genevieve", "Margo", "Whitney", "Rachel",
                 "Bridget", "Seung", "Jessica", "Harry", "Kesler", "Darin", "Jade", "Dominika", "Nashae", "Brianna",
