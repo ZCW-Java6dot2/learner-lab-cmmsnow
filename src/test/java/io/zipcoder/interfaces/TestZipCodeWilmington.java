@@ -7,18 +7,21 @@ import org.junit.Test;
 public class TestZipCodeWilmington {
     @Before
     public void setup(){
-        ZipCodeWilmington zipcode = new ZipCodeWilmington();
-        zipcode.fireStaff();
+        ZipCodeWilmington zipCode = new ZipCodeWilmington();
+        zipCode.fireStaff();
     }
 
     @Test
     public void testFireStaff(){
-        Assert.assertTrue(instructorList.isEmpty());
+        ZipCodeWilmington zipCode = new ZipCodeWilmington();
+        Assert.assertTrue((zipCode.getInstructors()).isEmpty());
     }
 
     @Test
     public void testHireStaff(){
-        zipcode.hireStaff();
-        Assert.assertTrue(instructorList.isEmpty());
+        ZipCodeWilmington zipCode = new ZipCodeWilmington();
+        Instructor instructor = new Instructor("Bob");
+        zipCode.hire(instructor);
+        Assert.assertFalse((zipCode.getInstructors()).isEmpty());
     }
 }

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class TechConnect {
     private ArrayList<Student> studentList = new ArrayList<Student>();
 
-    static { // static initializer
+    { // static initializer
         String[] studentNames = { "Karen", "Liel", "Quinn", "Destiny", "Blesson", "Danielle B.", "Andre", "Jeff",
                 "Carlo", "Julia D.", "Natalie", "Julia E.", "Shylee", "Genevieve", "Margo", "Whitney", "Rachel",
                 "Bridget", "Seung", "Jessica", "Harry", "Kesler", "Darin", "Jade", "Dominika", "Nashae", "Brianna",
@@ -17,15 +17,15 @@ public class TechConnect {
         }
     }
 
-    public static void recruitStudent(Student student){
+    public void recruitStudent(Student student){
         studentList.add(student);
     }
 
-    public static ArrayList<Student> getStudents(){
+    public ArrayList<Student> getStudents(){
         return studentList;
     }
 
-    public static void removeStudents(){
+    public void removeStudents(){
         studentList.clear();
     }
 }
